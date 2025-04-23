@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: "Dongle-regular", sans-serif;
+            font-size: 1.4rem;
+        }
+        header {
+            display: flex;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            align-items: center;
+        }
+      .logo {
+            flex: 1;
+            max-width: 50%;
+            max-height: 20%;
+        }
+      .logo img {
+            max-width: 50%;
+        }
+      .nav-menu ul {
+            display: flex;
+        }
+      .nav-menu li {
+            list-style: none;
+            margin-right: 20px;
+        }
+      .nav-menu a {
+            text-decoration: none;
+            font-family: "Dongle-bold";
+            font-size: 1.6rem;
+            color: #333;
+            transition: all ease 0.3s;
+        }
+      .nav-menu a:hover {
+            color: #ff7f50;
+        }
+      .booking-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+            background-color: #f7f7f7;
+        }
+      .booking-form h1 {
+            font-family: "Dongle-bold";
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+      .booking-form label {
+            font-family: "Dongle-regular";
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+      .booking-form input,.booking-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            border: none;
+            border-radius: 10px;
+        }
+      .booking-form button {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.6rem;
+            background-color: #ff7f50;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all ease 0.3s;
+        }
+      .booking-form button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/ffsf.jpg" alt="Travel Booking Logo">
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home </a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="booking" class="booking-form">
+        <h1>Book Your Dream Vacation</h1>
+        <label for="destination">Destination:</label>
+        <select id="destination">
+            <option value="paris">Taj Mahal</option>
+            <option value="bali">lakshdweep </option>
+            <option value="new-york">Manali</option>
+            <option value="tokyo">Golden Temple</option>
+            <option value="sydney">jammu and Kashmir</option>
+            <option value="rio">kerela</option>
+        </select>
+        <label for="dates">Dates:</label>
+        <input type="date" id="dates" name="dates">
+        <label for="accommodation">Accommodation:</label>
+        <select id="accommodation">
+            <option value="hotel">Hotel</option>
+            <option value="resort">Resort</option>
+            <option value="vr">Vacation Rental</option>
+        </select>
+        <label for="guests">Guests:</label>
+        <input type="number" id="guests" min="1" max="10" value="1">
+        <button>Check Availability</button>
+    </section>
+</body>
+</html>

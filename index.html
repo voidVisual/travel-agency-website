@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAP Travel Agency</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>TAP</h1>
+        <p>TRAVEL AGENCY</p>
+      </div>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button type="button" onclick="search()" class="search-btn">Search</button>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#hotels">Hotels</a></li>
+          <li><a href="#activites">Activities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="/login" class="login-btn">Login</a>
+        <a href="/signup" class="signup-btn">Sign Up</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to Our Travel Agency</h1>
+          <p>Discover amazing destinations and book your next trip with us.</p>
+          <a href="/book" class="cta-button">Book Now</a>
+        </div>
+        <div class="hero-image">
+          <img src="images/heroimage.jpg" alt="Hero image" />
+        </div>
+      </section>
+      
+      <!-- Destinations -->
+      <section id="destinations" class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-grid">
+          <div class="destination-item">
+            <img src="images/tajmehel.jpg" alt="" />
+            <h3>Taj Mahal</h3>
+            <p>
+              The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/goldentemple.jpeg" alt="" />
+            <h3>Golden Temple</h3>
+            <p>
+              The Golden temple is located in the holy city of the Sikhs, Amritsar. 
+              The Golden temple is famous for its full golden dome, it is one of the most sacred pilgrim spots for Sikhs.
+              
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/lakshadweep-island-tour.jpg" alt="" />
+            <h3>Lakshadweep</h3>
+            <p>
+              Lakshadweep Islands are one of the least visited yet one of
+               the most beautiful and serene places in India. 
+               There are a total of 36 islands, 12 atolls and three reefs.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="hotels" class="destinations">
+        <h2>Featured Hotels</h2>
+        <div class="destination-grid">
+          <div class="destination-item">
+            <img src="images/tajhotel.jpg" alt="" />
+            <h3>Taj Hotel</h3>
+            <p>
+              Experience luxury accommodations and impeccable service at The
+              Taj Hotel, located in the heart of the city Mumbai.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/Tajlakepalace.jpg" alt="" />
+            <h3>Taj Lake Palace, Udaipur</h3>
+            <p>
+              Relax in a lake at The Taj Lake Palace , which is surrounded by lake and 
+              has 65 luxurious rooms and 18 grand suites.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/keralahote.jpg" alt="" />
+            <h3>Kumarakom Lake Resort</h3>
+            <p>
+              Kumarakom is a gathering of stunning little islands on the Vembanad Lake, 
+              the largest lake in South India. The city is around 70 km from Kochi.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="activites" class="destinations">
+        <h2>Featured Activities</h2>
+        <div class="destination-grid">
+          <div class="destination-item">
+            <img src="images/activity1.jpg" alt="" />
+            <h3>Treaking</h3>
+            <p>
+              There are so many amazing things and places to explore in India, like its never-ending list of cultures, unique lifestyle, colorful traditions and the vast countryside,
+               which you can explore during your trekking expedition in India.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/scubadiving.jpg" alt="" />
+            <h3>Scuba Diving</h3>
+            <p>
+              Scuba diving is a mode of underwater diving whereby divers use breathing equipment that is completely independent of a surface breathing gas supply,
+               and therefore has a limited but variable endurance..
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/rafting.jpg" alt="" />
+            <h3>Rafting</h3>
+            <p>
+              Are you ready to embark on an adrenaline-fueled journey through breathtaking rapids and stunning natural landscapes? 
+              Look no further than TAP Agency for the ultimate rafting experience!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h3>About Us</h3>
+        <p>
+          Our company is dedicated to providing the best travel experiences to
+          our customers. We specialize in creating custom itineraries that cater
+          to each individual's interests and preferences.
+        </p>
+        <div class="team-members">
+          <div class="team-member">
+            <img src="images/mane.jpg" alt="" />
+            <h4>Tejashri Mane</h4>
+          </div>
+
+          <div class="team-member">
+            <img src="images/om.jpg" alt="" />
+            <h4>Om Ghorpade</h4>  
+          </div>
+
+          <div class="team-member">
+            <img src="images/prajwal.jpg" alt="" />
+            <h4>Prajwal Jadhav</h4> 
+          </div>
+
+          
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <h3>Contact Us</h3>
+        <div class="contact-info">
+          <p>
+            If you have any questions or would like to book a trip, please fill
+            out the form below or contact us using the information provided.
+          </p>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>SKNCOE,Vadgaon BK,Pune
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i
+              ><a href="mailto:info@travelcompany.com"
+                >info@TAPtravelcompany.com</a
+              >
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i
+              ><a href="tel:555-123-4567">999-888-777</a>
+            </li>
+          </ul>
+        </div>
+        <form action="/contact" method="POST" class="form">
+          <div class="form-group">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+      <footer>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.twitter.com/" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <p>&copy; 2023 Your Travel Website. All Rights Reserved.</p>
+      </footer>
+    </main>
+  </body>
+  <script src="script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/6558443b63.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
