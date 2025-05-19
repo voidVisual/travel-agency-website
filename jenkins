@@ -1,0 +1,38 @@
+pipeline {
+    agent {label"dockerbuild"}
+
+    stages {
+        stage('code') {
+            steps {
+                echo 'clonning the code'
+                git url:"https://github.com/voidVisual/travel-agency-website",branch:"main"
+            }
+        }
+        stage('build') {
+            steps {
+                echo 'building the code'
+                sh"docker build -t travel-agency-web:latest ."
+                echo"build successfull"
+            }
+        }
+        stage('docker push') {
+            steps {
+                withCredentials([usernamePassword(
+                    credentialsId:"dockerhub-key",
+                    usernameVariable:"dockerHubUser", 
+                    passwordVariable:"dockerHubPass")]){
+                sh 'echo $dockerHubPass | docker login -u $dockerHubUser --password-stdin'
+                sh "docker image tag travel-agency-web:latest ${env.dockerHubUser}/travel-agency-web:latest"
+                sh "docker push ${env.dockerHubUser}/travel-agency-web:latest"
+                echo 'pushing latest image to the docker hub'}
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'deploy to EC2'
+                 sh "docker compose down && docker compose up -d --build"
+            }
+        }
+        
+    }
+}
